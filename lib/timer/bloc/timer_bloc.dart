@@ -19,6 +19,7 @@ class TimerBloc extends Bloc<TimerEvent, TimerState> {
     on<TimerStarted>(_onStarted);
     on<TimerPaused>(_onPaused);
     on<TimerResumed>(_onResumed);
+    on<TimerReset>(_onReset);
     on<TimerTicked>(_onTicked);
   }
 
